@@ -1,38 +1,49 @@
-.App {
+.container {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  padding: 20px;
+}
+.firstButtons {
+  padding: 5px;
+  width: 100px;
+  background-color: #B5C0D0;
+  border-color: white;
+  color: #161A30;
+}
+
+.deleteAll {
+  margin-top: 30px;
+  width: 200px;
+  height: 30px;
+  background-color: #747264;
+  border-color: white;
+  font-size: 17px;
+  color: #161A30;
+}
+.deleteOne {
+  background-color: #BED1CF;
+  border-color: white;
+  padding: 10px;
+  color: #161A30;
+  font-weight: bolder;
+}
+h1 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url("https://img.freepik.com/free-photo/closeup-shot-beautiful-blue-ocean-waves_181624-22872.jpg?t=st=1715702800~exp=1715706400~hmac=a0b9d6ebfd18c5e3a7bfe041a1bbabc4cd780c0f879c7b4337a3c23dbf4d1f1b&w=900");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2 {
+  color: #3D3B40;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.more {
+  border: none;
+  background-color: #6986a6;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 30%;
 }
