@@ -6,7 +6,10 @@ import './App.css';
 function App() {
 
   const [slide, setSlide] = useState (0);
-  const {image} = data [slide];
+  const {image} = data[slide];
+  const [experiences, setExperiences] = useState (info);
+  const [showText, setShowText] = useState(false);
+
   const previousSlide = () => {
     setSlide ((slide => {
       slide --;
@@ -25,10 +28,6 @@ function App() {
     return slide;
   }))
   }
-
-  const [experiences, setExperiences] = useState (info);
-  const [showMore, setShowMore] = useState(false);
-  const [showText, setShowText] = useState(false);
   const removeItem = (id) => {
     let newExperiences = experiences.filter(
       experience => experience.id !== id);
